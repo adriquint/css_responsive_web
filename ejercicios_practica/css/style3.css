@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0; 
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none
+  }
+
+  .grilla {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas: 
+    "h  h  h"
+    "n  co ch"
+    "f  f  f";
+    margin: 5px;        
+  }
+
+  .grilla > div {
+    text-align: center;
+    border: 2px solid black;
+    padding: 30px;
+    font-size: 25px;    
+  }
+
+  .header {
+    grid-area: h;   
+  }
+
+  .sidebar {
+    grid-area: n;    
+  }
+
+  .contenido {
+    grid-area: co;    
+  }
+
+  .chat {
+    grid-area: ch;    
+  }
+
+  .footer {
+    grid-area: f;    
+  }
